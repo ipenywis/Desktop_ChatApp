@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align items in Main Axis */
+    align-items: stretch;
+    /* align items in Cross Axis */
+    align-content: stretch;
+    /* Extra space in Cross Axis */
+}
+
+.flex-container-horz {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align items in Main Axis */
+    align-items: stretch;
+    /* align items in Cross Axis */
+    align-content: stretch;
+    /* Extra space in Cross Axis */
+}
+
+.flex-container-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align items in Main Axis */
+    align-items: stretch;
+    /* align items in Cross Axis */
+    align-content: stretch;
+    /* Extra space in Cross Axis */
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stetsh;
+    align-content: stretsh;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.flex-grow-2 {
+    flex: 2;
+}
+
+.flex-grow-3 {
+    flex: 3;
+}
+
+#item1 {
+    background-color: rgba(200, 10, 10, 0.5);
+}
+
+#item2 {
+    background-color: rgba(10, 200, 10, 0.5);
+}
+
+.flexbox-item.header {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.flexbox-item.footer {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.flexbox-item.content {
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.flexbox-item {
+    padding: 8px;
+}
+
+.centered-container {
+    padding: 25px;
+}
+
+.space-btw-vert {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}

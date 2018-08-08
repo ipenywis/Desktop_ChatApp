@@ -1,0 +1,237 @@
+body {
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+$dark_blue_color: #30404d;
+label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Login */
+
+#login-form {
+    max-width: 56%;
+    margin: auto;
+    display: flow-root;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+}
+
+#chat-bar-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    //padding-left: 20px;
+    input {
+        border-radius: 0;
+        border: 1px solid rgb(73, 182, 187);
+    }
+    button {
+        border-radius: 0;
+    }
+}
+
+#chat-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-input {
+    width: 100%;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(14, 12, 12, 0.16);
+    z-index: 1;
+    padding: 80px;
+}
+
+.login-box-container {
+    width: 40%;
+    height: 100%;
+    input {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+//Side Area
+#side-area {
+    box-shadow: 1px 0px 8px rgba(15, 15, 15, 0.2);
+    padding: 20px;
+    padding-bottom: 38px;
+}
+
+//Main Area
+#main-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+//Message Container
+#message-container {
+    list-style: none;
+}
+
+//Single Message
+.message {
+    width: fit-content;
+    padding: 9px;
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(15, 15, 15, 0.07), 0px 0px 7px 1px rgba(15, 15, 15, 0.15);
+    box-shadow: 0px 0px 18px 1px rgba(15, 15, 15, 0.07), 0px 0px 7px 1px rgba(15, 15, 15, 0.15);
+    font-family: Advent Pro bold;
+    font-size: 15px;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 13px;
+    /* background-color: rgba(138, 247, 160, 0.5); */
+}
+
+.messages-container-owner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    height: fit-content;
+    margin: 0;
+}
+
+.messages-container-sender {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    height: fit-content;
+    margin: 0;
+}
+
+.bordered-header {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    border-bottom: 2px solid #1efb2f;
+    padding: 5px;
+}
+
+
+/* Side Area Components */
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
+    font-size: 16px;
+    background-color: rgba(184, 191, 184, 0.09);
+}
+
+.user-settings {
+    width: auto;
+    position: absolute;
+    bottom: 3em;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 22em;
+    min-height: 10em;
+    padding: 0 20px 0 20px;
+    background: $dark_blue_color;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.options-container {
+    line-height: 1.7;
+    font-family: Oxygen, sans-serif;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+}
+
+.option {
+    font-size: 17px;
+}
+
+.update-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  padding: 22px;
+  width: 504px;
+  height: 406px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 5px rgba(15, 15, 15, 0.2);
+  border-radius: 5px;
+}
